@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
+    <title>Site Mario Encanador</title>
+=======
+    <title>Super Encanador</title>
+>>>>>>> 0937adc842de568fc1af3a2cd8064e1648523af2
+</head>
+
+<body>
+    <div class="caixa-video-mario">
+        <video src="video/Super Mario Bros. - O Filme _ Trailer Dublado.mp4" autoplay loop>
+        </video>
+        <div class="mascara-video"></div>
+    </div>
+    <div class="caixa-principal">
+        <img src="img/Mario_Series_Logo.svg.png" alt="logo-mario" class="logo-mario">
+        <p>Os melhores encanadores - Mario & Luigi resolva seus problemas com todos os tipos de encanamentos.</p>
+        <p>Se você já se encontrou nessa situação chame a gente, e faça seu orçamento.</p>
+        <button onclick="cliqueiNoBotao()">Fale Conosco</button>
+    </div>
+
+
+    <img src="img/marioluigi.jpg" alt="marioluigi" class="imagem-mario-luigi">
+
+    <form class="fale-conosco" action="https://formsubmit.co/furiousfraga@gmail.com" method="POST">
+        <h1>Fale Conosco</h1>
+        <input placeholder="Seu Nome" type="text" name="nome">
+        <input placeholder="Telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite se problema" name="informacoes"></textarea>
+        <button onclick="esconderFormulario()" class="button-form">Entre em Contato</button>
+
+    </form>
+    <div class="mascara-formulario"></div>
+
+</body>
+    <script>
+      let formulario = document.querySelector(".fale-conosco");
+      let mascara = document.querySelector(".mascara-formulario");
+
+
+      function cliqueiNoBotao () {
+        formulario.style.left = "700px"
+        mascara.style.visibility = "visible"
+
+      }
+      function esconderFormulario () {
+        formulario.style.left = "-230px"
+        mascara.style.visibility = "hidden"
+      } 
+
+    </script>
+
+
+</html>
